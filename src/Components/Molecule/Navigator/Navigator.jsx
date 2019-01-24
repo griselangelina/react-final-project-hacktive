@@ -3,6 +3,7 @@ import {Navbar,Nav,NavItem,NavDropdown,MenuItem,Grid} from 'react-bootstrap';
  import './Navigator.css';
 
 class Navigator extends Component {
+  //testcomment
   render() {
     return (
       <div>
@@ -18,7 +19,7 @@ class Navigator extends Component {
   <Navbar.Collapse>
     <Nav pullRight>
       <NavItem eventKey={1} href="#">
-        Menerima Tamu di Rumah
+        Menerima Tamu di Rumah2
       </NavItem>
       <NavItem eventKey={2} href="#">
         Adakan Sebuah Perjalanan
