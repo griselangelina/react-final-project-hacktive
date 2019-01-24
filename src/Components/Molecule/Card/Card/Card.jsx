@@ -13,13 +13,13 @@ export const SmallCard = (props) => {
       </div>
     );
 }
-
+//testttt
 export const MediumCard = () => {
   return (
     <div className="medium-card">
           <div className="medium-bg" style={{backgroundImage:`url("https://a0.muscache.com/im/pictures/82af5bc4-ed5b-44d9-9209-ac0f2fbf8986.jpg?aki_policy=large")`}}>
           </div>
-
+          
           <div className="medium-text">
              <p className="title">testtt</p>
             <div class="start-from-text">Rata-rata <br/>Rp1714586/malam</div>
