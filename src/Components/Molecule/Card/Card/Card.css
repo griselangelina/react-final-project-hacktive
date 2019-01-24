@@ -1,0 +1,167 @@
+.small-card{
+    display:flex;
+    flex-direction: row;
+    width: 25% !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    
+}
+
+.small-card .in{
+    display: flex;
+    background-color: transparent !important;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px !important;
+    float: left !important;
+    margin-bottom: 4px !important;
+    text-align: left !important;
+    width: 100% !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+    border-image: initial !important;
+    border-radius: 3px !important;
+    padding: 0px !important;
+    overflow: hidden !important;
+}
+
+.pic-in{
+    width:100%;
+        display: flex !important;
+        vertical-align: middle !important;
+}
+.pic-in p{
+    padding-top: 10%;
+    padding-left: 10%;
+}
+.pic-in img{
+            width: 96px !important;
+            height: 72px !important;
+            min-height: 100% !important;
+            overflow: auto !important;
+            background: rgb(72, 72, 72) !important;    
+}
+
+.text {
+    display:flex;
+    width: 100% !important;
+    vertical-align: middle !important;
+    font-weight:700;
+    font-size: 16px;
+}
+
+
+.medium-card{
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: 0.25rem;
+        overflow: hidden;
+        -webkit-box-shadow: rgba(0,0,0,0.45) 0 2px 5px;
+        margin-bottom:50px;
+    
+}
+
+.medium-card img{
+    height: auto;
+    width: 100%;
+}
+.medium-bg{
+    background-size: cover;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:100px;
+}
+.medium-text{
+    position: absolute !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    right: 0px !important;
+    padding-bottom: 32px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    overflow-wrap: break-word !important;
+    font-size: 18px !important;
+    color:white;
+    font-weight: 800 !important;
+    line-height: 1.44444em !important;
+    color: rgb(255, 255, 255) !important;
+    text-align: center !important;
+    margin: 0px !important;
+}
+
+.medium-text > .title{
+    text-align: inherit;
+}
+.start-from-text {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    overflow-wrap: break-word !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.28571em !important;
+    color: rgb(255, 255, 255) !important;
+    text-align: center !important;
+    margin: 0px !important;
+}
+
+
+.product-card{
+    width: 100% !important;
+    height: 100% !important;
+    padding-top: 8px !important;
+    padding-bottom: 12px !important;
+
+}
+
+.product-card .product-img img{
+    width:100%;
+    height:auto;
+}
+
+
+.product-text{
+    width: 100% !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+.product-text >.title{
+    margin:0px;
+    font-weight: 800 !important;
+    font-size: 12px !important;
+    line-height: 16px !important;
+    letter-spacing: normal !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    text-transform: uppercase !important;
+    color: rgb(72, 72, 72) !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    margin-bottom: 2px !important;
+    overflow: hidden !important;
+}
+
+.product-text > .price {
+    font-weight: normal !important;
+    font-size: 14px !important;
+    text-align: left;
+    line-height: 18px !important;
+    letter-spacing: normal !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    color: rgb(72, 72, 72) !important;
+}
+._1mdw4yrg {
+    color: rgb(0, 132, 137) !important;
+    margin-right: 2px !important;
+}
+
+._z1pr8k6 {
+    color: #008489 !important;
+}

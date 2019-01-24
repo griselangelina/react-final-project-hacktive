@@ -1,0 +1,7 @@
+.jumbotron-v2{
+    background-image: url('../../../Asset/jumbotron.jpg');
+    background-size: cover;
+    z-index: -1 !important;
+    height: 80% !important;
+    width: 100% !important;
+}

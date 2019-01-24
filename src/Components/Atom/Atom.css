@@ -1,0 +1,22 @@
+
+.input-text-a{
+    width:80%;
+    height: 60px;
+    margin-right:10px;
+    border-radius: 5px !important;
+}
+
+.button-search-header{
+    display: inline-block !important;
+    width: 76px !important;
+    height: 60px !important;
+    padding: 23px !important;
+    color: #ffffff !important;
+    background: #FF5A5F !important;
+    border: 1px solid #FF5A5F !important;
+    border-radius: 5px !important;
+    box-shadow: 0 10px 36px rgba(0,0,0,0.65) !important;
+    text-align: center !important;
+    text-shadow: 0 0 black;
+
+}
