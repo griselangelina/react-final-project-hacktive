@@ -1,0 +1,94 @@
+.modal-medium-box {
+    z-index: 10 !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 14px 36px 2px !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    white-space: normal !important;
+    display: inline-block !important;
+    max-height: calc(100vh - 152px) !important;
+    visibility: visible !important;
+    background: rgb(255, 255, 255) !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgba(0, 0, 0, 0.2) !important;
+    border-image: initial !important;
+    border-radius: 4px !important;
+    padding: 24px !important;
+    max-width:400px;
+}
+
+.pos1{
+    position: relative !important;
+    top: -2px !important;
+    left: -345px !important;
+}
+.pos2{
+    position: relative !important;
+    top: -2px !important;
+    left: -250px !important;
+}
+.pos3{
+    position: relative !important;
+    top: -2px !important;
+    left: 117px !important;
+}
+.modal-row {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    min-height: 1px !important;
+    position: relative !important;
+    width: 100% !important;
+    float: left !important;
+    margin-bottom: 16px;
+    text-align:left;
+}
+
+.modal-body{
+        position: relative;
+        padding: 25px;
+}
+ .modal-body input{
+    margin-bottom: 25px;
+}
+
+
+._73ihd0r {
+    display: table-cell !important;
+    vertical-align: top !important;
+    white-space: normal !important;
+    position: relative !important;
+    top: 2px !important;
+}
+._foa2bi {
+    display: inline-block !important;
+    cursor: pointer !important;
+    padding: 0px !important;
+}
+._zkrkb6 {
+    display: table-cell !important;
+    vertical-align: top !important;
+    white-space: normal !important;
+}
+._fhj4ui {
+    height: var(--size-check-box-size, 18px) !important;
+    width: var(--size-check-box-size, 18px) !important;
+}
+
+
+._fcv8ql {
+    position: absolute !important;
+    width: 0px !important;
+    opacity: 0 !important;
+}
+._fhj4ui {
+    height: 18px !important;
+    width: 18px !important;
+    display: inline-block !important;
+    text-align: center !important;
+    background: rgb(255, 255, 255) !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgb(235, 235, 235) !important;
+    border-radius: 2px !important;
+    overflow: hidden !important;
+}

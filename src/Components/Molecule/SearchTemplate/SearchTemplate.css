@@ -1,0 +1,30 @@
+.template{
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    padding-top:50px !important;
+    padding-bottom:100px !important;
+    max-width: 1080px !important;
+    margin:0 auto !important;
+    text-align:left;
+}
+.search-template {
+    background: #ffffff !important;
+    border-radius: 4px !important;
+    padding: 32px !important;
+    padding-bottom: 24px !important;
+    width: 441px !important;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12) !important;
+}
+
+.search-title {
+    font-size: 30px !important;
+    font-weight:800;
+    line-height: 36px !important;
+    letter-spacing: normal !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    text-transform: undefined !important;
+    color: #484848 !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    margin: 0px !important;
+}
