@@ -30,7 +30,7 @@ class Detail extends Component {
                                     <SideDetail sideData={this.props.detail}/>
                                 </Col>
                                 <Col xs={12} md={12}>
-                                <p><Ulasan ulasan={this.props.ulasan}/></p>
+                                <p><Ulasan ulasan={this.props.ulasan} rate={this.props.detail.rate}/></p>
                                 </Col>
                             </Row>
 

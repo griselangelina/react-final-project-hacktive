@@ -53,6 +53,11 @@ export const BedCard = () => {
 }
 
 export const ProductCard = (props) => {
+  const star = [];
+    for (var i=0; i < props.productData.rate; i++) {
+        star.push( <Star />);
+    }
+
   return (
     
     <div className="product-card">
@@ -72,9 +77,7 @@ export const ProductCard = (props) => {
               </span>
               <span className="star-rating">
 
-               <Star />
-               <Star/>
-               <Star />
+               {star}
               </span>
               </div>
             

@@ -6,6 +6,11 @@ class Price extends Component {
         super(props)
     }
     render() {
+        const star = [];
+        for (var i=0; i < this.props.rate; i++) {
+            star.push( <Star />);
+        }
+
         return (
             <div>
                 <Row>
@@ -16,9 +21,7 @@ class Price extends Component {
                     </Col>
                     <Col  xs={12} md={12}>
                     <span className="star-rating">
-                        <Star />
-                        <Star />
-                        <Star />
+                       {star}
                     </span>
                     <span className="text-xs">
                         {this.props.nilai}

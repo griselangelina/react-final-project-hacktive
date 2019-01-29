@@ -5,7 +5,14 @@ import {StarLarge,StarSmall} from '../../Atom/Star';
 import './Detail.css';
 
 class UlasanDetail extends Component {
+    constructor(props){
+        super(props)
+    }
     render() {
+        const star = [];
+        for (var i=0; i < this.props.rate; i++) {
+            star.push(  <StarLarge />);
+        }
         return (
             <div>
                 <Row  >
@@ -13,9 +20,7 @@ class UlasanDetail extends Component {
                     <div>
                         <span className="ulasan-text">155 Ulasan</span>
                         <span className="penilaian"> 
-                            <StarLarge />
-                            <StarLarge />
-                            <StarLarge />
+                           {star}
                         </span>  
                         
                         <hr /> 

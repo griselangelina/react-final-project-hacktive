@@ -10,7 +10,7 @@ class PriceDetail extends Component {
     render() {
         return (
             <div className="price-detail">
-                <Price price={this.props.price.harga} nilai={this.props.price.nilai}/>
+                <Price price={this.props.price.harga} rate={this.props.price.rate} nilai={this.props.price.nilai}/>
                 <FormPrice />
             </div>
         );

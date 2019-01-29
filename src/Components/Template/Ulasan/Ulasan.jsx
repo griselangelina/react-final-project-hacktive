@@ -9,11 +9,9 @@ class Ulasan extends Component {
 
 
     render() {
-        console.log("yois ",this.props.ulasan)
-
         return (
             <div>
-               <UlasanDetail /> 
+               <UlasanDetail rate={this.props.rate}/> 
                 {
                    this.props.ulasan.map((p)=> <CommentDetail commentdata={p}/>)
                 } 
