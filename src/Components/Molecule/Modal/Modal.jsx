@@ -26,42 +26,42 @@ export const ModalTamu = (props) => {
                 <Col xs={12} md={4}>
                     <PlusButton></PlusButton>
                 </Col>
-                <Col xs={12} md={4}>
-                    <span>0</span>
+                <Col xs={12} md={4} style={{marginLeft:`10px`}}>
+                    <p>1</p>
                 </Col>
-                <Col xs={12} md={4}>
+                <Col xs={12} md={4} style={{marginLeft:`-10px`}}>
                     <MinButton></MinButton>
                 </Col>    
             </Col>       
         </div>
         <div  className="modal-row" >
             <Col xs={12} md={6}>
-                Dewasa
+                Anak-Anak
             </Col>
             <Col xs={12} md={6}>
                 <Col xs={12} md={4}>
                     <PlusButton></PlusButton>
                 </Col>
-                <Col xs={12} md={4}>
-                    <span>0</span>
+                <Col xs={12} md={4} style={{marginLeft:`10px`}}>
+                    <p>1</p>
                 </Col>
-                <Col xs={12} md={4}>
+                <Col xs={12} md={4} style={{marginLeft:`-10px`}}>
                     <MinButton></MinButton>
                 </Col>    
             </Col>       
         </div>
         <div  className="modal-row" >
         <Col xs={12} md={6}>
-                Dewasa
+                Lansia
             </Col>
             <Col xs={12} md={6}>
                 <Col xs={12} md={4}>
                     <PlusButton></PlusButton>
                 </Col>
-                <Col xs={12} md={4}>
-                    <span>0</span>
+                <Col xs={12} md={4} style={{marginLeft:`10px`}}>
+                    <p>1</p>
                 </Col>
-                <Col xs={12} md={4}>
+                <Col xs={12} md={4} style={{marginLeft:`-10px`}}>
                     <MinButton></MinButton>
                 </Col>    
             </Col>         
@@ -88,16 +88,16 @@ export const ModalKategori = (props) => {
 
         <div className="modal-row">
         <Col xs={12} md={6}>
-                Dewasa
+                Koper
             </Col>
             <Col xs={12} md={6}>
                 <Col xs={12} md={4}>
                     <PlusButton></PlusButton>
                 </Col>
-                <Col xs={12} md={4}>
-                    <span>0</span>
+                <Col xs={12} md={4} style={{marginLeft:`10px`}}>
+                   <p>1</p>
                 </Col>
-                <Col xs={12} md={4}>
+                <Col xs={12} md={4} style={{marginLeft:`-10px`}}>
                     <MinButton></MinButton>
                 </Col>    
             </Col>       

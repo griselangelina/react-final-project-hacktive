@@ -67,7 +67,7 @@ export const ProductCard = (props) => {
         <Link to={`/room/${props.productData===undefined?'Rumah/1':props.ctg+'/'+props.productData.id}`}>
         <div className="product-text">
             <p className="title">{props.productData===undefined?"MENGAMATI SATWA LIAR":props.productData.nama} </p>
-            <div className="price">{props.productData===undefined? "Rp363.485 per orang" :"Rp "+props.productData.harga+" per oramg"}</div>
+            <div className="price">{props.productData===undefined? "Rp363.485 per orang" :"Rp "+props.productData.harga+" per orang"}</div>
            
             <div style={{textAlign:"left"}}>
               <span className="rank">
