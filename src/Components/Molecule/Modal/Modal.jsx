@@ -116,17 +116,7 @@ export const ModalLogin = (props) => {
         <Modal.Header closeButton>
         </Modal.Header>
         <Modal.Body>
-            
-                <input type="email" autocomplete="username" className="input-text-login" id="email-login-email" name="email" placeholder="Alamat Email" value=""/>
-          
-                <input type="email" autocomplete="username" className="input-text-login" id="email-login-email" name="email" placeholder="Kata Sandi" value=""/>
-           
-                <LongButtonRed click={props.login}>
-                    Login
-                </LongButtonRed>
-            
-         
-            
+               {props.children}
         </Modal.Body>
 
       

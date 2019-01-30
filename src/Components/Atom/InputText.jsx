@@ -3,7 +3,7 @@ import './Atom.css';
 import {SearchBtnIcon} from './Button';
 export const InputText = () => {  
     return (    
-            <input className="input-text-a"></input>
+            <input className="input-text-a" onChange={()=>this.change()}></input>
     )
 }
 

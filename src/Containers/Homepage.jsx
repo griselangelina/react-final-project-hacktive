@@ -16,13 +16,12 @@ class Homepage extends Component {
   render() {
     return (
       <div>
-      <Jumbotron />
-      <Jelajah />
-      <Rekomendasi rekomendasi={this.props.rekomendasi}/>
-      <TopRated data={this.props.rumah} ctg="Rumah" compTitle="Rumah yang di nilai tinggi" />
-      <TopRated data={this.props.pengalaman} ctg="Pengalaman"compTitle="Pengalaman yang di nilai tinggi"/>
-      <TopRated data={this.props.restoran} ctg="Restoran" compTitle="Restoran yang di nilai tinggi"/>
-
+        <Jumbotron />
+        <Jelajah />
+        <Rekomendasi rekomendasi={this.props.rekomendasi}/>
+        <TopRated data={this.props.rumah} ctg="Rumah" compTitle="Rumah yang di nilai tinggi" />
+        <TopRated data={this.props.pengalaman} ctg="Pengalaman"compTitle="Pengalaman yang di nilai tinggi"/>
+        <TopRated data={this.props.restoran} ctg="Restoran" compTitle="Restoran yang di nilai tinggi"/>
       </div>
     );
   }

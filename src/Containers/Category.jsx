@@ -25,9 +25,9 @@ class Category extends Component {
   render() {
     return (
       <div>
-      <CategoryHeader />
-      <Jelajah />
-      <TopRated data={this.props.rumah} ctg={this.props.match.params.id} compTitle="Memperkenalkan Airbnb plus" />
+        <CategoryHeader />
+        <Jelajah />
+        <TopRated data={this.props.rumah} ctg={this.props.match.params.id} compTitle="Memperkenalkan Airbnb plus" />
       </div>
     );
   }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navigator from '../../Molecule/Navigator/Navigator';
 import {ButtonNav} from '../../Atom/Button';
 import {Grid} from 'react-bootstrap';
-import {ModalTamu,ModalKategori,ModalLogin} from '../../Molecule/Modal/Modal';
+import {ModalTamu,ModalKategori} from '../../Molecule/Modal/Modal';
 import './CategoryHeader.css';
 class CategoryHeader extends Component {
 
@@ -36,20 +36,15 @@ class CategoryHeader extends Component {
         return (
             <div className="category-header">
                <Navigator searchBar={true}/>
-
                 <Grid>
                     <div className="menu-button"> 
-                    <ButtonNav klik={this.modalOpen} id={'1'}>Jumlah Tamu</ButtonNav>
-                    <ButtonNav klik={this.modal2Open} id={'2'}>Jumlah Koper</ButtonNav>
+                        <ButtonNav klik={this.modalOpen} id={'1'}>Jumlah Tamu</ButtonNav>
+                        <ButtonNav klik={this.modal2Open} id={'2'}>Jumlah Koper</ButtonNav>
                     </div> 
-
-
                     <ModalTamu open={this.state.modal1} close={modal1Close}/>
                     <ModalKategori open={this.state.modal2} close={modal2Close}/>
 
                 </Grid>
-              
-
             </div>
         );
     }

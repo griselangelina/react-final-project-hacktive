@@ -6,23 +6,89 @@ import { Redirect } from "react-router-dom";
  import {InputTextCategory} from '../../Atom/InputText';
  import {ModalLogin} from '../../Molecule/Modal/Modal';
 
- 
+ import {LongButtonRed} from '../../Atom/Button';
+
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux'; /*bind dari file action */
 import {login,logout} from '../../../redux/Data/actions';
+import {checkValidity} from './validity';
 class Navigator extends Component {
   constructor(props){
     super(props)
     this.state={
-      modallogin:false,
+        modallogin:false,
+        isValid:false,
+        formControls: {
+          email:{
+            value:"",
+            valid:false,
+            validation: {
+              required: true,
+              isEmail: true
+            },
+          },
+          password:{
+             value:"",
+              valid:false,
+              validation: {
+                required: true,
+                minLength:8,
+              }
+          }, 
+      }
     }
   }
+  checkValidity(value, rules) { 
+   /* let isValid = true;
+    if (!rules) {
+        return true;
+    }
+    
+    if (rules.required) {
+        isValid = value.trim() !== '' && isValid;
+    }
+    if (rules.minLength) {
+      isValid = value.length >= rules.minLength && isValid
+    }
+    if (rules.isEmail) {
+        const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+        isValid = pattern.test(value) && isValid
+    }
+
+
+    return isValid;*/
+
+   return checkValidity(value, rules);
+}
+
   login= () =>{
     this.props.login()
     this.setState({modallogin:false})
   }
   logout = () =>{
     this.props.logout()
+  }
+
+  change= (event) =>{
+    const name = event.target.name;
+    const updatedOrderForm = {
+      ...this.state.formControls
+    };
+    const updatedFormElement = { 
+        ...updatedOrderForm[name]
+    };
+    updatedFormElement.value = event.target.value;
+    updatedFormElement.valid = this.checkValidity(updatedFormElement.value, updatedFormElement.validation);
+    updatedOrderForm[name] = updatedFormElement;
+
+    let formIsValid = true;
+    for (let inputIdentifier in updatedOrderForm) {
+      formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;
+    }
+
+    this.setState({formControls: updatedOrderForm, formIsValid: formIsValid});
+
+
   }
   //testcomment
   modalloginOpen =() =>{
@@ -90,7 +156,20 @@ class Navigator extends Component {
         Masuk
       </NavItem>
     </Nav>
-    <ModalLogin open={this.state.modallogin} close={modalLogin} login={this.login}/>
+    <ModalLogin open={this.state.modallogin} close={modalLogin}>
+          <input type="email"  value={this.state.formControls.email.value}   onChange={this.change} autocomplete="email" className="input-text-login"  name="email" placeholder="Alamat Email" />
+          
+          <input type="password" value={this.state.formControls.password.value}  onChange={this.change} autocomplete="password" className="input-text-login"  name="password" placeholder="Kata Sandi"/>
+          {
+            this.state.formIsValid?
+              <LongButtonRed click={this.login}>
+                Login
+              </LongButtonRed> 
+            :
+              ""
+          }
+         
+    </ModalLogin>
   </Navbar.Collapse>
 
   

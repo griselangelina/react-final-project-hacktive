@@ -36,7 +36,6 @@ export const getAllData = () =>{
         axios.get('https://testingdb-7a13b.firebaseio.com/kategori.json')
         .then(response => {
             dispatch(getAllDataSuccess(response.data))
-            //console.log(response.data.Pengalaman)
         })
         .catch(()=>{
             const error = 'gagal fetch data'
