@@ -7,8 +7,9 @@ Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Click "Masuk" on the Navbar to login.
-Kindly create an account first in "Daftar" Menu or by clicking "Daftar" on the modal.
+Kindly register an account first in "Daftar" Menu or by clicking "Daftar" on the modal.
 Create an email in right format (example : yohan@yahoo.com) and password minimum 6 digits of character.
+You cannot register with email/password that already registered before.
 There will be an error message if login was error.
 
 - If you don't want to "Daftar" first, please use this account to login
