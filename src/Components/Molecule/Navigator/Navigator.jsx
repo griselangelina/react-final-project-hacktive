@@ -91,6 +91,11 @@ class Navigator extends Component {
     this.setState({ isRegis:false,modallogin:true})
   }
 
+  //to handle modal regis open
+  modalRegisOpen =() =>{
+    this.setState({ isRegis:true,modallogin:true})
+  }
+
   // to handle login to daftar
   changeHandlerDaftar = () =>{
     this.props.clear()
@@ -172,7 +177,7 @@ class Navigator extends Component {
                 <NavItem eventKey={3} href="#" className={this.props.searchBar?"c":""}>
                   Bantuan
                 </NavItem>
-                <NavItem eventKey={4} href="#" className={this.props.searchBar?"c":""}>
+                <NavItem eventKey={4} onClick={this.modalRegisOpen}  href="#" className={this.props.searchBar?"c":""}>
                 Daftar
                 </NavItem>
                 <NavItem eventKey={5} onClick={this.modalloginOpen} href="#" className={this.props.searchBar?"c":""}>
