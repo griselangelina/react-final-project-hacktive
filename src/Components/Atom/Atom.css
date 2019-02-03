@@ -272,3 +272,11 @@
         border-radius: 2px !important;
         overflow: hidden !important;
 }
+
+.logo{
+    display: inline-block !important;
+    vertical-align: middle !important;
+    font-size: 34px !important;
+    color:inherit;
+    transition: color 0.25s ease 0s !important;
+}

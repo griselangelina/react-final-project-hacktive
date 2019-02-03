@@ -15,20 +15,19 @@ class Price extends Component {
             <div>
                 <Row>
                     <Col  xs={12} md={12}>
-                    <span class="text-big">Rp {this.props.price}</span>
-                    <span class="text-xs"> Per malam</span>
-                    
+                        <span class="text-big">Rp {this.props.price}</span>
+                        <span class="text-xs"> Per malam</span>
                     </Col>
                     <Col  xs={12} md={12}>
-                    <span className="star-rating">
-                       {star}
-                    </span>
-                    <span className="text-xs">
-                        {this.props.nilai}
-                    </span>
+                        <span className="star-rating">
+                        {star}
+                        </span>
+                        <span className="text-xs">
+                            {this.props.nilai}
+                        </span>
                     </Col>
                     <Col  xs={12} md={12}>
-                    <div className="pembatas"></div>
+                        <div className="pembatas"></div>
                     </Col>
                 </Row>
             </div>

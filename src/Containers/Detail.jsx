@@ -37,7 +37,7 @@ class Detail extends Component {
 
                         </Col>
                         <Col xs={12} md={4}>
-                        <PriceDetail price={this.props.detail}/>
+                            <PriceDetail price={this.props.detail} islogin={this.props.islogin}/>
                         </Col>
                     </Row>
                     
@@ -50,7 +50,7 @@ class Detail extends Component {
 const mapStateToProps = (state) =>({
     detail:state.data.detail,
     ulasan:state.data.ulasan,
-    islogin:state.data.isLogin
+    islogin:state.auth.isLogin
 
   })
   

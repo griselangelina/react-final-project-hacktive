@@ -10,13 +10,13 @@ class searchTab extends Component {
             <Grid className="header-search-tab">
                 <Row >
                     <Col xs={12} md={4}>
-                    <h1>Rencanakan perjalanan Anda berikutnya</h1>
+                        <h1>Rencanakan perjalanan Anda berikutnya</h1>
                     </Col>
                 </Row>
                 <Row >
-                <Col xs={12} md={6} className="search-form">
-                    <InputText></InputText>
-                    <ButtonSearch></ButtonSearch>
+                    <Col xs={12} md={6} className="search-form">
+                        <InputText></InputText>
+                        <ButtonSearch></ButtonSearch>
                     </Col>
                 </Row>
             </Grid>

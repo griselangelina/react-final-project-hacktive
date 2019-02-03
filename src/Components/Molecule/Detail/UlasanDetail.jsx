@@ -17,16 +17,15 @@ class UlasanDetail extends Component {
             <div>
                 <Row  >
                     <Col xs={12} md={12}>
-                    <div>
-                        <span className="ulasan-text">155 Ulasan</span>
-                        <span className="penilaian"> 
-                           {star}
-                        </span>  
-                        
-                        <hr /> 
-                    </div>
+                        <div>
+                            <span className="ulasan-text">155 Ulasan</span>
+                            <span className="penilaian"> 
+                            {star}
+                            </span>  
+                            
+                            <hr /> 
+                        </div>
                     </Col>
-                
                 </Row>
                 <Row  >
                     <Col xs={12} md={6}>
@@ -87,9 +86,9 @@ class UlasanDetail extends Component {
                        </div>
                        <div>
                             <Col xs={12} md={6}>
-                            <span className="text-small">
-                                        Komunikasi
-                                    </span>
+                                <span className="text-small">
+                                            Komunikasi
+                                </span>
                             </Col>
                             <Col xs={12} md={6}>
                                 <span className="penilaian"> 
@@ -100,9 +99,9 @@ class UlasanDetail extends Component {
                        </div>
                        <div>
                             <Col xs={12} md={6}>
-                            <span className="text-small">
-                                        Kebersihan
-                                    </span>
+                                <span className="text-small">
+                                            Kebersihan
+                                </span>
                             </Col>
                             <Col xs={12} md={6}>
                                 <span className="penilaian"> 
@@ -116,16 +115,15 @@ class UlasanDetail extends Component {
                 </Row>
                 <Row  >
                     <Col xs={12} md={12}>
-                    <div className="pembatas-div"></div>
+                        <div className="pembatas-div"></div>
                     </Col>
                 
                 </Row>
                 <Row  >
                     <Col xs={12} md={12}>
-                    <div>
-                        <LongButton>Terjemahkan Ulasan
-                            </LongButton>
-                    </div>
+                        <div>
+                            <LongButton>Terjemahkan Ulasan</LongButton>
+                        </div>
                     </Col>      
                 </Row>
             </div>

@@ -32,7 +32,7 @@ export const LongButtonRed = (props) => {
 }
 export const PesanBtn = (props) => {  
     return (    
-            <button className="pesan-button">
+            <button className="pesan-button" onClick={() => props.click(props.data)}>
                 {props.children}
             </button>
     )

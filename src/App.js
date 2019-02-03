@@ -11,10 +11,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-       <Switch>
-        <Route path="/" exact component={Homepage} />
-        <Route path="/:id" exact component={Category} />
-        <Route path="/room/:ctg/:idx" exact component={Detail} />
+        <Switch>
+          <Route path="/" exact component={Homepage} />
+          <Route path="/:id" exact component={Category} />
+          <Route path="/room/:ctg/:idx" exact component={Detail} />
         </Switch>
       </div>
 

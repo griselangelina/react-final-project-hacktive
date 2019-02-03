@@ -20,7 +20,7 @@ class RumahDetail extends Component {
                             </Col>
                             <Col xs={12} md={4}>
                                 <img class="_1mgxxu3" src={this.props.rumah.foto_pemilik} height="64" width="64" alt="Profil Pengguna Anna" title="Profil Pengguna Anna" />
-                        </Col>
+                            </Col>
                         </Row>
                         <Row>
                             <Col xs={12} md={12} className="rooms">
@@ -38,9 +38,7 @@ class RumahDetail extends Component {
                             </Col>
                         </Row>
                     
-                    </Col>
-                    
-                   
+                    </Col>   
                 </Row>
                 </div>
         );

@@ -14,9 +14,7 @@ class Ulasan extends Component {
                <UlasanDetail rate={this.props.rate}/> 
                 {
                    this.props.ulasan.map((p)=> <CommentDetail commentdata={p}/>)
-                } 
-             
-               
+                }    
             </div>
         );
     }
